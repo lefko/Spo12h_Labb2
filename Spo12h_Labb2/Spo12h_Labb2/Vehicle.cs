@@ -7,5 +7,10 @@ namespace Spo12h_Labb2
 {
     class Vehicle
     {
+        public string Manufacturer { get; set; }
+        public string Fuel { get; set; }
+        public int MaxSpeed { get; set; }
+
+
     }
 }

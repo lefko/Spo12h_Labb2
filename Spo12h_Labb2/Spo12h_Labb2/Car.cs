@@ -7,5 +7,7 @@ namespace Spo12h_Labb2
 {
     class Car
     {
+        public int NoOfDoors { get; set; }
+        public int NoOfSeats { get; set; }
     }
 }

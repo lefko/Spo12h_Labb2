@@ -7,5 +7,7 @@ namespace Spo12h_Labb2
 {
     class Boat
     {
+        public string Model { get; set; }
+        public int Hp { get; set; }
     }
 }
