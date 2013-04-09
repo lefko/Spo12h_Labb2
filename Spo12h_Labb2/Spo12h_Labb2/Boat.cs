@@ -5,21 +5,34 @@ using System.Text;
 
 namespace Spo12h_Labb2
 {
-    internal class Boat : Vehicle
+    public class Boat : Vehicle
     {
-        public string Model { get; set; }
-        public int Hp { get; set; }
+
+        #region Constructors
 
         public Boat()
         {
-            
+
         }
 
-        public Boat(string mod, int horsepower):base()
+        public Boat(string model, int hP)
+            : base()
         {
-            this.Model = mod;
-            this.Hp = horsepower;
+            this.Model = model;
+            this.HP = hP;
         }
+
+        #endregion
+
+
+        #region Properties
+        
+        public string Model { get; set; }
+        public int HP { get; set; }
+
+        #endregion
+
+
     }
 }
 

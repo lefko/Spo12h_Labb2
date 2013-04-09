@@ -5,20 +5,32 @@ using System.Text;
 
 namespace Spo12h_Labb2
 {
-    class Car : Vehicle
+    public class Car : Vehicle
     {
-        public int NoOfDoors { get; set; }
-        public int NoOfSeats { get; set; }
+
+        #region Constructors
 
         public Car()
         {
-            
+
         }
 
-        public Car(int numberOfDoors, int numberOfseats):base()
+        public Car(int noOfDoors, int noOfseats)
+            : base()
         {
-            this.NoOfDoors = numberOfDoors;
-            this.NoOfSeats = numberOfseats;
+            this.NoOfDoors = noOfDoors;
+            this.NoOfSeats = noOfseats;
         }
+
+        #endregion
+
+        #region Properties
+        
+        public int NoOfDoors { get; set; }
+        public int NoOfSeats { get; set; }
+
+        #endregion
+
+
     }
 }
