@@ -38,6 +38,17 @@ namespace Spo12h_Labb2
 
         #endregion
 
+        #region Methods
+
+        public override string ToString()
+        {
+            string strg;
+            strg = "This is an Airplane" + base.ToString() + "\nLength: " + Length + "Width: " + Width;
+            return strg;
+        }
+
+        #endregion
+
 
 
     }

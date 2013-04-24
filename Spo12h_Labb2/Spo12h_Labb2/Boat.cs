@@ -39,6 +39,16 @@ namespace Spo12h_Labb2
 
         #endregion
 
+        #region Methods
+
+        public override string ToString()
+        {
+            string strg;
+            strg = "\nThis is a Boat " + base.ToString() + "\nModel: " + Model + "\nHorse Power: " + HP;
+            return strg;
+        }
+
+        #endregion
 
     }
 }

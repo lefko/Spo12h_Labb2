@@ -38,6 +38,16 @@ namespace Spo12h_Labb2
 
         #endregion
 
+        #region Methods
+
+        public override string ToString()
+        {
+            string strg;
+            strg = "\nThis is a Car" + base.ToString() + "\nNo of Doors: " + NoOfDoors + "No of Seats: " + NoOfSeats;
+            return strg;
+        }
+        #endregion
+
 
     }
 }

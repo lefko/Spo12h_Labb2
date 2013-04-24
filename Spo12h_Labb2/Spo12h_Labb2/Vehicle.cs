@@ -64,6 +64,16 @@ namespace Spo12h_Labb2
 
         #endregion
 
+        #region Methods
+
+        public override string ToString()
+        {
+            string strng;
+            strng = "\nManufacturer: " + Manufacturer + "\nFuel: " + Fuel + "\nMax Speed: " + MaxSpeed; 
+            return strng;
+        }
+
+        #endregion
 
     }
 }
