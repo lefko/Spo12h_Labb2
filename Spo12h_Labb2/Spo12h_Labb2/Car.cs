@@ -43,7 +43,7 @@ namespace Spo12h_Labb2
         public override string ToString()
         {
             string strg;
-            strg = "\nThis is a Car" + base.ToString() + "\nNo of Doors: " + NoOfDoors + "No of Seats: " + NoOfSeats;
+            strg = "\nThis is a Car" + base.ToString() + "\nNo of Doors: " + NoOfDoors + "\nNo of Seats: " + NoOfSeats;
             return strg;
         }
         #endregion

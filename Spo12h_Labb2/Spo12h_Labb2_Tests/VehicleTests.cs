@@ -7,5 +7,9 @@ namespace Spo12h_Labb2_Tests
 {
     class VehicleTests
     {
+        //
     }
+
+    
+
 }

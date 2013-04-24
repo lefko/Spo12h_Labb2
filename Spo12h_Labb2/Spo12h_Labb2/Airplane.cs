@@ -43,7 +43,7 @@ namespace Spo12h_Labb2
         public override string ToString()
         {
             string strg;
-            strg = "This is an Airplane" + base.ToString() + "\nLength: " + Length + "Width: " + Width;
+            strg = "\nThis is an Airplane" + base.ToString() + "\nLength: " + Length + "\nWidth: " + Width;
             return strg;
         }
 
