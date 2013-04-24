@@ -7,6 +7,8 @@ namespace Spo12h_Labb2
 {
     public abstract class Vehicle
     {
+        private int maxSpeed;
+        private string fuel;
 
         #region Constructors
 
@@ -28,8 +30,37 @@ namespace Spo12h_Labb2
         #region Properties
         
         public string Manufacturer { get; set; }
-        public string Fuel { get; set; }
-        public int MaxSpeed { get; set; }
+        
+        public string Fuel
+        {
+            get { return fuel; }
+            set
+            {
+                if (value == "petrol" || value == "diesel" || value == "hydrogen")
+                {
+                    fuel = value;
+                }
+                else
+                    fuel = "No fuel given";
+            }
+        }
+        
+        public int MaxSpeed
+        {
+            get { return maxSpeed; }
+            set
+            {
+                if (value >= 0)
+                {
+                    maxSpeed = value;
+                }
+                else
+                {
+                    maxSpeed = 0;
+                }
+            }
+        }
+        
 
         #endregion
 
