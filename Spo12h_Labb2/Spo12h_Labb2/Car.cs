@@ -10,13 +10,20 @@ namespace Spo12h_Labb2
 
         #region Constructors
 
-        public Car()
+        public Car():this(0,0)
         {
 
         }
 
         public Car(int noOfDoors, int noOfseats)
             : base()
+        {
+            this.NoOfDoors = noOfDoors;
+            this.NoOfSeats = noOfseats;
+        }
+
+        public Car(int noOfDoors, int noOfseats, string manufacturer, string fuel, int maxSpeed)
+            : base(manufacturer, fuel, maxSpeed)
         {
             this.NoOfDoors = noOfDoors;
             this.NoOfSeats = noOfseats;

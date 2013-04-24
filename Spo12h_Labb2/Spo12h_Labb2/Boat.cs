@@ -22,6 +22,13 @@ namespace Spo12h_Labb2
             this.HP = hP;
         }
 
+        public Boat(string model, int hP, string manufacturer, string fuel, int maxSpeed)
+            : base(manufacturer, fuel, maxSpeed)
+        {
+            this.Model = model;
+            this.HP = hP;
+        }
+
         #endregion
 
 
